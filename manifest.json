@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "updated": "2026-06-04",
+  "block": {
+    "version": 0,
+    "name": "EL-Paint Monoblock (STM32F103)",
+    "url": "",
+    "size": 0,
+    "sha256": "",
+    "min_app": 4,
+    "notes": "Placeholder. Populated at production with a real per-product-key package. Never publish dev-key (.elpfw built with the public test-vector key)."
+  }
+}
