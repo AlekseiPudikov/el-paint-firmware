@@ -28,7 +28,7 @@ version ≤ the device's current one).
   "block": {
     "version": 5,                 // integer firmware version (matches device report)
     "name": "EL-Paint Monoblock (STM32F103)",
-    "url": "https://github.com/<owner>/el-paint-firmware/releases/download/block-v5/block_v5.elpfw",
+    "url": "https://raw.githubusercontent.com/EL-paint/OTA-fw/main/firmware/block_v5.elpfw",
     "size": 11788,                // bytes (download sanity check)
     "sha256": "<hex>",            // app verifies after download (BL CRC32 is the final gate)
     "min_app": 4,                 // minimum compatible app version

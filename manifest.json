@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "updated": "2026-06-04",
+  "updated": "2026-06-05",
   "block": {
     "version": 6,
     "name": "EL-Paint Monoblock (STM32F103)",
-    "url": "https://raw.githubusercontent.com/AlekseiPudikov/el-paint-firmware/main/firmware/block_v6.elpfw",
+    "url": "https://raw.githubusercontent.com/EL-paint/OTA-fw/main/firmware/block_v6.elpfw",
     "size": 11788,
     "sha256": "39aebc7eb65c5cc51c4c5732ed307685372bcce5a96e714a5c1262dc64661d76",
     "min_app": 4,
