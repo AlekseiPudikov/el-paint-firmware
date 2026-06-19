@@ -1,13 +1,13 @@
 {
   "schema": 1,
-  "updated": "2026-06-05",
+  "updated": "2026-06-19",
   "block": {
-    "version": 6,
+    "version": 20,
     "name": "EL-Paint Monoblock (STM32F103)",
-    "url": "https://raw.githubusercontent.com/EL-paint/OTA-fw/main/firmware/block_v6.elpfw",
-    "size": 11788,
-    "sha256": "39aebc7eb65c5cc51c4c5732ed307685372bcce5a96e714a5c1262dc64661d76",
+    "url": "https://raw.githubusercontent.com/EL-paint/OTA-fw/main/firmware/block_v20.elpfw",
+    "size": 12044,
+    "sha256": "6362cc62bc39fbd317b91c1310cb20eec696c36644b1759946e629570eddae46",
     "min_app": 4,
-    "notes": "Анти-кирпич: CRC-gated VERIFY, IWDG, boot-counter."
+    "notes": "Новые эффекты «Радуга» и «Аврора», плавные переливы, обновлённая шкала скорости."
   }
 }
