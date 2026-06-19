@@ -17,10 +17,6 @@ Packages are **AES-128-CBC encrypted** with a per-product key:
 Serve over HTTPS (GitHub does). The app refuses downgrades (won't install a
 version ≤ the device's current one).
 
-> ⚠️ **Never publish a dev-key package.** The dev key is the public FIPS-197 AES
-> test vector — a dev `.elpfw` is trivially decryptable. Only publish packages
-> built with the real per-product key (`provision.py encrypt`).
-
 ## `manifest.json`
 ```json
 {
@@ -38,10 +34,8 @@ version ≤ the device's current one).
 ```
 A `version` of `0` / empty `url` means "no update available".
 
-## Publishing a new firmware
-1. Build the production app (Keil target `Monoblock`) and encrypt it with the
-   **real** key: `provision.py encrypt Monoblock.hex -o block_v<N>.elpfw`.
-2. Upload `block_v<N>.elpfw` as a GitHub **Release** asset (keeps binaries out of
-   git history) — or commit it under `firmware/`.
-3. Bump `block.version` and set `url` / `size` / `sha256` in `manifest.json`,
-   then commit. The app picks it up on the next update check.
+## Releasing
+The release procedure (build → encrypt → version → manifest → push, plus key
+handling) is **internal** and lives in the private `factory` repo:
+`provision/PROVISIONING.md` → "Publishing an OTA release". This public repo holds
+only the encrypted `.elpfw` packages and `manifest.json`.
